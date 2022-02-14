@@ -1,5 +1,4 @@
 {
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
   "recommendations": [
     "angular.ng-template",
     "johnpapa.angular-essentials",
@@ -12,6 +11,9 @@
     "DSKWRK.vscode-generate-getter-setter",
     "esbenp.prettier-vscode",
     "HookyQR.beautify",
-    "expertly-simple.ng-evergreen"
+    "expertly-simple.ng-evergreen",
+    "johnpapa.vscode-peacock",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "msjsdiag.debugger-for-edge"
   ]
 }

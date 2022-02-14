@@ -1,10 +1,12 @@
 {
   "debug.openExplorerOnEnd": true,
   "editor.tabSize": 2,
-  "editor.rulers": [90],
+  "editor.rulers": [
+    90
+  ],
   "editor.autoIndent": "full",
   "editor.cursorBlinking": "solid",
-  "editor.formatOnType": false, // Adjust the intensity of
+  "editor.formatOnType": false,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
@@ -18,11 +20,10 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "typescript.tsdk": "node_modules/typescript/lib",
-  "workbench.iconTheme": "material-icon-theme", // Requires
-  "auto-close-tag.SublimeText3Mode": true, // Requires Auto
-
+  "workbench.iconTheme": "material-icon-theme",
+  "auto-close-tag.SublimeText3Mode": true,
   "html.autoClosingTags": false,
-  "peacock.affectActivityBar": true, // Requires Peacock
+  "peacock.affectActivityBar": true,
   "peacock.affectStatusBar": true,
   "peacock.affectTitleBar": false,
   "workbench.colorCustomizations": {
@@ -38,8 +39,12 @@
   },
   "peacock.color": "#b52e31",
   "gitlens.menus": {
-    // Requires GitLens
     "editorGroup": false
   },
-  "ng-evergreen.upgradeChannel": "Latest" // Requires Angular
+  "ng-evergreen.upgradeChannel": "Latest",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "npm.enableScriptExplorer": true
 }
