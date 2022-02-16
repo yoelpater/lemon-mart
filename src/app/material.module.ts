@@ -24,9 +24,8 @@ const modules = [
   MatSidenavModule,
   MatListModule,
 ]
+
 @NgModule({
-  declarations: [],
-  imports: modules,
   exports: modules,
 })
 export class MaterialModule {}
