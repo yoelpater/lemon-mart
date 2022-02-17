@@ -15,7 +15,10 @@ import { HomeComponent } from './home/home.component'
 import { LoginComponent } from './login/login.component'
 import { MaterialModule } from './material.module'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component'
+import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth'
 
 @NgModule({
   declarations: [
@@ -34,6 +37,8 @@ import { NavigationMenuComponent } from './navigation-menu/navigation-menu.compo
     MaterialModule,
     FlexLayoutModule,
     ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
   ],
   providers: [
     {

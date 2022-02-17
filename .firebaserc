@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "yoel-playground"
+  },
+  "targets": {
+    "yoel-playground": {
+      "hosting": {
+        "lemon-mart": [
+          "yoel-playground"
+        ]
+      }
+    }
+  }
+}

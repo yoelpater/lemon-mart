@@ -143,6 +143,16 @@
               "devServerTarget": "lemon-mart:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "lemon-mart:build:production",
+            "firebaseProject": "yoel-playground",
+            "firebaseHostingSite": "yoel-playground"
+          }
         }
       }
     }
