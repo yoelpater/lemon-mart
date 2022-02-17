@@ -1,25 +1,9 @@
 {
   "hosting": [
     {
-      "public": "dist/lemon-mart",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    },
-    {
       "target": "lemon-mart",
       "public": "dist/lemon-mart",
-      "ignore": [
-        "**/.*"
-      ],
+      "ignore": ["**/.*"],
       "headers": [
         {
           "source": "*.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].+(css|js)",

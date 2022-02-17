@@ -19,6 +19,7 @@ interface IJwtToken {
   exp: number
   sub: string
 }
+
 @Injectable()
 export class FirebaseAuthService extends AuthService {
   constructor(private afAuth: AngularFireAuth) {

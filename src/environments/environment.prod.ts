@@ -10,5 +10,5 @@ export const environment = {
     messagingSenderId: '407807258651',
   },
   production: true,
-  authMode: AuthMode.InMemory,
+  authMode: AuthMode.Firebase,
 }
