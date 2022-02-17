@@ -8,17 +8,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { AuthHttpInterceptor } from './auth/auth-http-interceptor'
-import { InMemoryAuthService } from './auth/auth.inmemory.service'
 import { AuthService } from './auth/auth.service'
 import { SimpleDialogComponent } from './common/simple-dialog.component'
 import { HomeComponent } from './home/home.component'
 import { LoginComponent } from './login/login.component'
 import { MaterialModule } from './material.module'
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
-import { provideAuth,getAuth } from '@angular/fire/auth'
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component'
+import { environment } from '../environments/environment'
+import { AngularFireModule } from '@angular/fire/compat'
+import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/compat/auth'
+import { authFactory } from './auth/auth.factory'
 
 @NgModule({
   declarations: [
@@ -37,13 +37,14 @@ import { provideAuth,getAuth } from '@angular/fire/auth'
     MaterialModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
   ],
   providers: [
     {
       provide: AuthService,
-      useClass: InMemoryAuthService,
+      useFactory: authFactory,
+      deps: [AngularFireAuth],
     },
     {
       provide: HTTP_INTERCEPTORS,

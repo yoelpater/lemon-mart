@@ -1,3 +1,5 @@
+import { AuthMode } from 'src/app/auth/auth.enum'
+
 export const environment = {
   firebase: {
     projectId: 'yoel-playground',
@@ -8,4 +10,5 @@ export const environment = {
     messagingSenderId: '407807258651',
   },
   production: true,
+  authMode: AuthMode.InMemory,
 }
