@@ -99,9 +99,9 @@
     }
   },
   "config": {
-    "imageRepo": "[namespace]/[repository]",
-    "imageName": "custom_app_name",
-    "imagePort": "3000",
+    "imageRepo": "yoelpater/lemon-mart",
+    "imageName": "lemon-mart",
+    "imagePort": "8080",
     "internalContainerPort": "3000"
   }
 }
