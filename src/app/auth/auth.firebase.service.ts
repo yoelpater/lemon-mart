@@ -5,6 +5,7 @@ import { AngularFireAuth } from '@angular/fire/compat/auth'
 import firebase from 'firebase/compat/app'
 import { Observable, Subject } from 'rxjs'
 import { map } from 'rxjs/operators'
+
 import { IUser, User } from '../user/user/user'
 import { Role } from './auth.enum'
 import {
@@ -13,6 +14,7 @@ import {
   IServerAuthResponse,
   defaultAuthStatus,
 } from './auth.service'
+
 interface IJwtToken {
   email: string
   iat: number

@@ -1,5 +1,10 @@
 {
-  "extends": ["tslint-etc", "tslint-config-prettier", "tslint-plugin-prettier"],
+  "extends": [
+    "tslint-etc",
+    "tslint-config-prettier",
+    "tslint-plugin-prettier",
+    "tslint-plugin-cypress"
+  ],
   "rules": {
     "no-unused-declaration": true,
     "max-line-length": [false, 90],
