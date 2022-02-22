@@ -1,5 +1,6 @@
 import { AngularFireAuth } from '@angular/fire/compat/auth'
 import { environment } from 'src/environments/environment'
+
 import { AuthMode } from './auth.enum'
 import { FirebaseAuthService } from './auth.firebase.service'
 import { InMemoryAuthService } from './auth.inmemory.service'
